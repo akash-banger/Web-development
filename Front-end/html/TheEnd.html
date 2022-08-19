@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <ul id="element">  <!-- when you give an ID to an element then it will become a global varible with name of that id-->
+        <li>First Element</li>
+        <li>Second Element</li>
+        <li>Third Element</li>
+    </ul>
+    <div id="firstDiv">first div</div>
+    <table>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>Four</td>
+        </tr>
+    </table>
+    <script>
+        // Root Node 
+        // console.log(document.documentElement);
+        // console.log(document.head);
+        // console.log(document.body);
+
+        // Childrens 
+        // console.log(document.body.childNodes);
+        // console.log(document.body.children);   // will give HTMLCollection will looks like array but it is not an array
+
+        // console.log(document.body.firstChild);
+        // console.log(document.body.lastChild);
+
+        // console.log(document.body.firstElementChild);
+        // console.log(document.body.lastElementChild);   // check output in console
+
+        // conversion of an object to array
+        // lets convert childrens of body to array 
+
+        // const childrensOfBody = Array.from(document.body.children);
+        // console.log(childrensOfBody);   // compare it with HTMLCollection(childrens of body) in console
+        
+
+        // siblings 
+        // const ulTag = document.body.children[0];
+        // console.log(ulTag.nextElementSibling);   // will give next element sibling skipping unnecesary siblings
+        // const firstLi = ulTag.children[0];
+        // const secondLi = ulTag.children[1];
+        // console.log(secondLi.previousElementSibling.textContent)   // text content will give the text stored in that element 
+
+        
+
+        // // Table DOM Manipulation 
+        // const tableTag = document.body.children[1];
+        // console.log(tableTag.tBodies)
+        // console.log(tableTag.tBodies[0].rows);
+        // console.log(tableTag.tBodies[0].rows[0].cells[0].textContent);
+
+        // // Manipulation
+        // console.log(tableTag.tBodies[0].rows[0].cells[1].style = "background-color: blue")
+
+
+
+        // directly targeting an element without travelling through there nodes 
+        // get element by ID
+
+        // console.log(element);
+        // element.style.background = "red";
+
+        // const ulTag = document.getElementById("element");
+        // console.log(ulTag);
+        // ulTag.style.background = "blue";
+
+
+        // // setting an attribute 
+        // console.log(element.setAttribute('order-placed','pending'));
+        // console.log(element.getAttribute('order-placed'))
+        // console.log(element.hasAttribute('order-placed'));
+        // // element.removeAttribute('order-placed')
+        // console.log(element.hasAttribute('order-placed'));
+        // console.log(element.attributes)
+
+
+        // Creating and removing the node elements 
+        const newDiv = document.createElement('div');
+        document.body.append(newDiv);
+        const newText = document.createTextNode('text');
+        newDiv.appendChild(newText);
+        firstDiv.replaceWith(newDiv);
+        newDiv.remove();
+        /// go to mdn dom Manipulation thats it
+    </script>
+</body>
+</html>

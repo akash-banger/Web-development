@@ -1,0 +1,18 @@
+/* refer Important prp of css.txt for notes */
+/* In this I am gonna style the table present in second.html file */
+
+table{
+    border: 5px solid ;
+    border-collapse: collapse; /*used to collapse the borders*/
+}
+tr,td,th{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid;
+}
+thead{
+    background-color: rgb(128, 230, 196);
+}
+tbody,tfoot{
+    background-color:rgb(252, 138, 138);
+}

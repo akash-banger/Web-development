@@ -1,0 +1,55 @@
+body div.main{
+    margin: auto;
+    margin-top: 5%;
+    background-color: antiquewhite;
+    width: 50%;
+    border-radius: 8px;
+}
+div.heading{
+    background-color: rgb(224, 240, 254);
+    padding: auto;
+    border: 0px solid brown;
+    border-radius: 8px;
+}
+.main_heading{
+    padding: 25px;
+    text-align: center;
+    color: rgba(137, 43, 226, 0.619);
+}
+div.paddling{
+    padding: 20px;
+    padding-top: 0px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"]{
+    width:40%;
+    margin: 6px;
+    border: 1px solid rgb(248, 213, 169);
+    border-radius: 6px;
+}
+
+textarea{
+    margin-left: 0%;
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid rgb(248, 213, 169);
+    border-radius: 6px;
+}
+
+input[type="submit"]{
+    background-color: antiquewhite;
+    padding: 8px;
+    font-size: 12px;
+    width: 20%;
+    border: 0.5px solid black;
+    border-radius: 20px;
+
+}
+
+input[type="submit"]:hover{
+    background-color: rgba(137, 43, 226, 0.619);
+    color: white;
+    cursor: pointer;
+}

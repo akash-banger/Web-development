@@ -1,0 +1,79 @@
+<!-- flexbox can be used to manage the position of all the boxes in your website.
+to use the flexbox properties first make a big div and than in that div make display as flex and than you can use all the p
+properties of flexbox  -->
+<!-- see important properties file for the syntaxes -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.box-set{
+            display: flex;
+            flex-direction:row;
+            /* align-items: center;       spacing also included */
+            /* align-content: center;     spacing not included just elements */
+            justify-content: center;      /*will take the content to the center along the main axis*/
+            height: 500px;
+            background-color: aliceblue;
+            padding: 50px;
+            flex-wrap: wrap;  /*it will wrap the elements when we decrease the size of window*/
+        }
+        .box{
+            text-align: center;
+            height: 75px; 
+            width: 75px;
+        }
+        .box-1{
+            /* flex-basis: 200px;      can be used to change the size of a particular box. */
+            flex-grow: 2;     /*can be used to change the grow rate of a particular element relative to the other elements.
+            .                  flex-shrink can also be used.*/
+            background-color: lightgreen;
+            border: 1px solid darkgreen;
+        }
+        .box-2{
+            flex-grow: 3;
+            /* width: 20px ; */
+            background-color: lightblue;
+            border: 1px solid darkblue;
+        }.box-3{
+            background-color: lightcoral;
+            border: 1px solid darkred;
+            order: 6;        /*can be used to change the order of the elements*/
+        }.box-4{
+            background-color: lightpink;
+            border: 1px solid darkmagenta;
+        }.box-5{
+            align-self:center;    /*can be used to align a particular element uniquely*/
+            background-color: lightgreen;
+            border: 1px solid darkgreen;
+        }
+        .box-6{
+            background-color: lightblue;
+            border: 1px solid darkblue;
+        }.box-7{
+            background-color: lightcoral;
+            border: 1px solid darkred;
+        }.box-8{
+            background-color: lightpink;
+            border: 1px solid darkmagenta;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-set">
+        <div class="box box-1"><h1>1</h1></div>
+        <div class="box box-2"><h1>2</h1></div>
+        <div class="box box-3"><h1>3</h1></div>
+        <div class="box box-4"><h1>4</h1></div>
+        <div class="box box-5"><h1>5</h1></div>
+        <div class="box box-6"><h1>6</h1></div>
+        <div class="box box-7"><h1>7</h1></div>
+        <div class="box box-8"><h1>8</h1></div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body{
+    margin:0 auto;
+    max-width: 900px;
+    width: 90%;
+}
+img{
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 180px;
+    float: left;
+}
+div{
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+h1{
+    text-align: center;
+}
+h2{
+    /* text-align: center; */
+    background-color: antiquewhite;
+    color: brown;
+    padding: 10px;
+    border-radius: 10px;
+}
+.cleared{
+    clear: left;   /*clear can be used to clear the float of some element in this we are clearing it for the paragraph 2.*/
+}

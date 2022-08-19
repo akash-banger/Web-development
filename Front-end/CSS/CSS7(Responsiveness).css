@@ -1,0 +1,126 @@
+/* this file is having some of the syntaxes of resposiveness and a test on responsive.html file.*/
+
+/* @media screen and (min-width: 600px) and (orientation: landscape){
+    body{
+        text-align:center;
+        color: red;
+    }
+} */
+
+/* @media (orientation: landscape){
+    body{
+        color: purple;
+    }
+} */
+
+/* @media screen and (min-width: 600px), screen and (orientation: landscape) {
+    body{
+        color: purple;
+    }
+} */
+
+/* @media not all and (orientation: landscape){
+    body{
+        color: blue;
+    }
+} */
+body{
+    font: 14px Georgia,serif;
+    background-color: white;
+}
+article,
+aside,figure,footer,header,hgroup,menu,nav,section{
+    display: block;
+}
+body div.box{
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    background-color: aliceblue;
+    overflow: hidden;
+}
+
+div.list{
+    margin: 2.5%;
+    width: 30%;
+    float: left;
+}
+div.paragraph{
+    margin: 2.5%;
+    width: 60%;
+    float: right;
+}
+div.list a{
+    text-decoration: none;
+    color: black;
+}
+
+@media all and (min-width:1001px){
+    div.list ul li a:after{
+        content:" (" attr(href) ")";
+        font-size: 11px;
+        font-style: italic;
+        color: gray;
+    }
+}
+
+@media all and (max-width: 1000px) and (min-width: 700px){
+    div.list ul li a:before{
+        content: "Google: ";
+        font-style: italic;
+        color: gray;
+    }
+}
+
+@media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px){
+    div.list ul li a:before{
+        content: "📧 ";
+    }
+}
+@media all and (max-width:300px){
+    div.list{
+        float: none;
+    }
+    div.paragraph{
+        float:none;
+    }
+}
+
+div.name{
+    text-align: center;
+}
+
+@media all and (min-width:1300px){
+    div.name{
+        width: 25%;
+        float: left;
+    }
+}
+@media all and (max-width:1299px) and (min-width:600px){
+    div.name{
+        width: 50%;
+        float: left;
+    }
+}
+
+
+section{
+    position: relative;
+    overflow: hidden;
+}
+
+div#first{
+    background-color: antiquewhite;
+}
+div#second{
+    background-color:rgb(185, 228, 245);
+}
+div#third{
+    background-color:honeydew;
+}
+div#fourth{
+    background-color:beige;
+}
+
+
+/* You can learn many things from this file, like adding icons in front of some a tag using content property and responsiveness also. */

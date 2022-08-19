@@ -1,0 +1,60 @@
+body{
+    background-color: black;
+    color: white;
+}
+nav{
+    justify-content: center;
+    background-color: aliceblue;
+    display: flex;
+}
+a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+}
+header{
+    padding: 15px 30px 15px 30px;
+    text-align: center;
+}
+a:hover{
+    color: brown;
+}
+main{
+    color:rgb(246, 157, 4);
+    display: flex;
+    justify-content: center;
+}
+form{
+    width: 70%;
+}
+input, textarea{
+    border: solid 1px gray;
+    border-radius: 5px;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+}
+
+#submit:hover {
+    background-color: bisque;
+}   
+section{
+    background-image: url('/static/istockphoto-1132086660-612x612.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn{
+    display: block;
+    width: 100%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border: solid 1px gray;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color:rgb(241, 186, 89);
+}

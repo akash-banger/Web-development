@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation in css</title>
+    <style>
+        a{
+            animation: bouncing .75s ease 0s infinite alternate both;
+            background-color: antiquewhite;
+            border-radius: 50%;
+            text-decoration: none;
+            display: inline-block;
+            color: black;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: 300;
+            letter-spacing: 0.2em;
+            padding: 1em 2em 1.1em;
+            position: relative;
+            text-transform: uppercase;
+            vertical-align: top;
+            margin-left: 200px;
+            margin-top: 300px;
+            transition: content 2s;
+        }
+        
+        @keyframes bouncing {
+            0%{
+                bottom: 0;
+                box-shadow: 0 30px 40px rgba(0, 0, 0, 0.500);
+            }
+            100%{
+                bottom:200px;
+                box-shadow: 0 30px 40px rgba(0, 0, 0, 0.100);
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Loading</a>
+</body>
+</html>

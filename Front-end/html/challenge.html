@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating list</title>
+</head>
+<body>
+    <h2 id="listTitle"></h2>
+    <ul id="ourList"></ul>
+    <script>
+        listTitle.textContent = prompt('Enter the title of the list');
+        const lenOfList = prompt('enter the length of your list');
+        for(let i=1; i<=lenOfList; i++){
+            let listItem = document.createElement('li');
+            ourList.appendChild(listItem);
+            let str = "enter the " + i + " item name";
+            let text = prompt(str);
+            let itemText = document.createTextNode(text);
+            listItem.appendChild(itemText);
+        }
+    </script>
+</body>
+</html>

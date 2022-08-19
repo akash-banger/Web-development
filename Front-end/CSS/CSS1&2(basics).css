@@ -1,0 +1,68 @@
+/*This is the first and second lecture of css*/
+/*syntax of css: It has some properties and each of those properties have some values which can be predefined or it can be user defined also*/
+/* refer notes of copy*/
+
+
+
+
+h1{
+    text-align: center;
+}
+
+h3{
+    color:goldenrod; /*changes the color of all your h3 elements to goldenrod*/
+    font-family:'hurricane'; /*you can import any font from google fonts*/
+}
+
+/* There are different type of selectors in css. you can use any, also you can combine the selectors so that you can give some rules to your selectors at once rather than giving them values again and again.
+for example: h1,p,span{color: purple;}*/
+
+.className{
+    color: blue; /*give class name to any of your tag so you can make changes in them uniquely*/
+}
+/*similarly you can use id name but for id name syntax is;;   #id="idname"{}  , just using # instead of .(dot)*/
+
+/*attribute selectors: can be used to design attribute tags. syntax for the same is written below*/
+
+a[href="https://www.google.com"]{
+    color:#50c5bb;
+}
+
+/*psedo class selector can also be used, explore whenever posssible. some example are= :visited :hover */
+
+a:hover{
+    color: red;
+}
+
+/*pseudo element selector can also be used, explore more. syntax for the same is given below.*/
+
+p::first-line{
+    color:chocolate;
+}
+
+/*combinator selectors is used to select the child tag for desigining*/
+
+article>p{
+    color:blueviolet;
+}
+
+/* universal selector can be used to select all the elements of your html file. syntax is given below */
+
+*{
+    background-color: #031b1b;
+    /* background-image: url(20181130_140924.jpg); */
+    /* background-repeat: repeat-y; */
+    /* background-position: right; */
+    color:cornflowerblue;
+}
+
+/* you can inspect your webpage and them make changes to your css file to beautify it. */
+/* you can use h1+p to select the p tag just below the h1 tag. */
+
+body h1+p .special{
+    color: cadetblue;
+    background-color: blanchedalmond;
+    padding: 4px;
+}
+
+/* refer lecture first of css to know more syntaxes or you can try googling */

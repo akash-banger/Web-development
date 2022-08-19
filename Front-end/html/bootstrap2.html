@@ -1,0 +1,127 @@
+<!-- You can use "npm run dist" for compling the variable file to add more colours of your choice-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bootstrap-Sources/dist/css/bootstrap.min.css">
+    <title>Bootstrap Grid</title>
+    <style>
+        body{
+            background-color: #7853b2;
+        }
+
+        .container,.container-fluid{
+            background-color: #f7cb07;
+            padding: 2em;
+        }
+
+        .panel{
+            border-radius: 0.3rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .panel,.panel-blue{
+            border: 1px solid #0087FF;
+            background-color: rgb(233, 244, 248);
+            color: #0087FF;
+        }
+        .panal,.panel-pink{
+            border: 1px solid rgb(248, 166, 180);
+            background-color: rgb(250, 242, 243);
+            color: rgb(248, 166, 180);
+        }
+
+    </style>
+</head>
+<body class="py-5">    <!-- this class means, Padding in y-axis is 5.-->
+    <div class="container panel panel-blue">    <!--This is a simple container.-->
+        Hello, I am in simple container.
+    </div>
+    <div class="container-fluid panel panel-blue">      <!--This is a fluid width container-->
+        Hello, I am in fluid-width container.
+    </div>
+    <div class="container bg-light">
+        <div class="row">
+            <div class="col">
+                <div class="panel panel-blue">There is a single coloumn.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="panel panel-blue">There are two coloumns.
+                </div>
+            </div>
+            <div class="col">
+                <div class="panel panel-blue">There are two coloumns.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"><div class="panel panel-blue">This is first coloumn</div></div>
+            <div class="col"><div class="panel panel-blue">This is the second coloumn</div></div>
+            <div class="col"><div class="panel panel-blue">This is the third coloumn</div></div>
+            <div class="col"><div class="panel panel-blue">This is the fourth coloumn</div></div>
+            <div class="col"><div class="panel panel-blue">This is the fifth coloumn</div></div>
+            <div class="col"><div class="panel panel-blue">This is the sixth coloumn</div></div>
+            <div class="col"><div class="panel panel-blue">This is the seventh coloumn</div></div>
+            <div class="col"><div class="panel panel-blue">This is the eighth coloumn</div></div>
+            <div class="col"><div class="panel panel-blue">This is the ninth coloumn</div></div>
+            <div class="col"><div class="panel panel-blue">This is the tenth coloumn</div></div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">    <!-- col-size can be used to give a size to coloumn-->
+                <div class="panel panel-pink">This is the col of size 6</div>
+            </div>
+            <div class="col-6">
+                <div class="panel panel-pink">This is the col of size 6</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <div class="panel panel-pink">This is the col of size 5</div>
+            </div>
+            <div class="col-7">
+                <div class="panel panel-pink">This is the col of size 7</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">   <!--sm md and lg can ve used to give          responsiveness to your coloumns-->
+                <div class="panel panel-blue">This is the col of responsiveness</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="panel panel-blue">This is the col of responsiveness</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="panel panel-blue">This is the col of responsiveness</div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="panel panel-blue">This is the col of responsiveness</div>
+            </div>
+        </div>
+    </div>
+    <div class="container bg-light">
+        <div class="row">
+            <div class="col-12 panel panel-blue">
+                This is a bigger coloumn.
+                <div class="row">
+                    <div class="col-4 panel panel-pink">1</div>
+                    <div class="col-4 panel panel-pink">2</div>
+                    <div class="col-4 panel panel-pink">3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="/bootstrap-Sources/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

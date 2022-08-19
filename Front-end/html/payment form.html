@@ -1,0 +1,70 @@
+<!--this is the content of the third lecture. we are talking about the webforms in this lecture-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Front-end/CSS/CSS4(payment form).css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap" rel="stylesheet">
+    <title>Payment form</title>
+</head>
+<div class="container">
+    <body>
+        <!--every form submission has a method, it can be get or post. get is used for simple data and post is used for the secure data-->
+        <form action="">
+            <h1 class="main_heading">Payment Form</h1>
+            <hr>
+            <h2>Contact Information</h2>
+            <!--Input type text is used for the text. required attribute used to compulsory filling of that field-->
+            <p class="name">First Name: <input type="text" name="fname" placeholder="Akash" required> </p>
+            <p class="name">Last Name: <input type="text" name="lname" placeholder="Banger" required> </p>
+            <!--Input type radio is used to select one option out of some. &nbsp; is used to give space -->
+    
+            <!-- <p>
+                Gender:&nbsp;&nbsp;&nbsp; Male <input type="radio" name="gender" id="">
+                Female <input type="radio" name="gender" id="">
+                Kyu btayun <input type="radio" name="gender" id="">
+            </p> -->
+    
+            <fieldset>
+                <legend>Gender</legend>
+                <p>
+                    Male <input type="radio" name="gender" id="male">
+                    Female <input type="radio" name="gender" id="female">
+                    kyu btayun <input type="radio" name="gender" id="rather_not_say">
+                </p>
+            </fieldset>
+    
+            <p>Address: <textarea name="address" id="" cols="50" rows="5" placeholder="Enter you address"></textarea></p>
+    
+            <p>Email: <input type="email" name="email" id="email" placeholder="anything@example.com"></p>
+    
+            <p>Pincode <input type="number" name="pincode" id="pincode" placeholder="123456"></p>
+            
+            <h2>Payment information</h2>
+    
+            <p>Card Type:&nbsp;&nbsp;&nbsp; 
+                <select name="card_type" id="card_type">
+                    <option value="">--Select a card type</option>
+                    <option value="visa">Visa</option>
+                    <option value="rupay">Rupay</option>
+                    <option value="else">Else</option>
+                </select>
+            </p>
+    
+            <P>Card Number:&nbsp;&nbsp;&nbsp; <input type="number" name="card_number" id="card_number" placeholder="1111-2222-3333-4444"></P>
+    
+            <p>Expiration date:&nbsp;&nbsp;&nbsp; <input type="date" name="expiration_date" id="expiration_date"></p>
+    
+            <p>CVV: &nbsp;&nbsp;&nbsp; <input type="password" name="cvv" id="cvv" placeholder="123"></p>
+    
+            <input type="submit" value="Pay now">
+            
+        </form>
+    </body>
+</div>
+</html>

@@ -1,0 +1,45 @@
+<!-- In this file we gonna learn about the css grid -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css grid</title>
+    <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px;         will make three coloums of 200px */
+            /* grid-template-columns: 1fr 2fr 1fr;                  will make 2 fraction of same length  and one with double*/
+            grid-gap: 20px;    /*can be used to give gap*/
+            grid-template-columns: repeat(auto-fill,minmax(200px,1fr));     /*can be used also just run and see*/
+            /* grid-template-rows: repeat(2,200px);           can be used for rows */
+            /* grid-auto-rows: 100px;                              used to fix the height of the rows */
+            grid-auto-rows: minmax(100px,auto);                       /*min size will be 100px max will be auto*/
+            grid-auto-columns: minmax(50px,auto);             /*same for coloumns*/
+            /* column-gap: 40px;                               can give row gap also */
+        }
+        .boxes{
+            background-color: antiquewhite;
+            border: 3px solid brown;
+            border-radius: 3px;
+        }
+        #item-1{    /*can be used to change the position of a box*/
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.container#yes>div.boxes{box $}*5  can be used as a cheat code-->
+    <div class="container">
+        <div class="boxes" id="item-1">box 1</div>
+        <div class="boxes">box 2</div>
+        <div class="boxes">box 3</div>
+        <div class="boxes">box 4</div>
+        <div class="boxes">box 5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wevice-winitial-scale=1.0">
+    <title>Flexbox challenge 1</title>
+    <style>
+        .box-set{
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .box{
+            background-color: antiquewhite;
+            margin: 2px;
+            border-radius: 7px;
+        }
+        .box1{
+            height: 120px;
+            width: 32.70%;
+        }
+        .box2{
+            height: 50px;
+            width: 24.39%;
+        }
+        .box3{
+            height: 30px;
+            width: 19.4%;
+        }
+        .boxx{
+            background-color: brown;
+            margin: 1px;
+            border-radius: 7px;
+        }
+        .boxx1{
+            height: 48px;
+            width: 32.70%;
+        }
+        .boxx2{
+            height: 29px;
+            width: 24.29%;
+        }
+        .boxx3{
+            height: 19px;
+            width: 19.2%;
+        }
+        .inside{
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box-set">
+        <div class="box box1" id="inside">
+            <div>&nbsp;&nbsp;1</div>
+            <div class="inside">
+                <div class="boxx boxx1">&nbsp; 1</div>
+                <div class="boxx boxx1">&nbsp; 2</div>
+                <div class="boxx boxx1">&nbsp;3</div>
+                <div class="boxx boxx2">&nbsp;1</div>
+                <div class="boxx boxx2">&nbsp;2</div>
+                <div class="boxx boxx2">&nbsp;3</div>
+                <div class="boxx boxx2">&nbsp;4</div>
+                <div class="boxx boxx3">&nbsp;1</div>
+                <div class="boxx boxx3">&nbsp;2</div>
+                <div class="boxx boxx3">&nbsp;3</div>
+                <div class="boxx boxx3">&nbsp;4</div>
+                <div class="boxx boxx3">&nbsp;5</div>
+            </div>
+        </div>
+        <div class="box box1">&nbsp;&nbsp;2</div>
+        <div class="box box1">&nbsp;&nbsp;3</div>
+        <div class="box box2">&nbsp;&nbsp;1</div>
+        <div class="box box2">&nbsp;&nbsp;2</div>
+        <div class="box box2">&nbsp;&nbsp;3</div>
+        <div class="box box2">&nbsp;&nbsp;4</div>
+        <div class="box box3">&nbsp;&nbsp;1</div>
+        <div class="box box3">&nbsp;&nbsp;2</div>
+        <div class="box box3">&nbsp;&nbsp;3</div>
+        <div class="box box3">&nbsp;&nbsp;4</div>
+        <div class="box box3">&nbsp;&nbsp;5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Hey there</title> -->
+    <title>#{title}</title>
+    <!-- <style>body{background-color: black;color: white;}</style> -->
+    style
+        include ../static/style.css
+</head>
+<body>
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact Us</a>
+    </nav>
+    <section>
+        <header>
+            <h2>Get this gym membership at 60$ - Fill this form now</h2>
+        </header>
+        <main>
+            <form action="/" id="contact" method="post">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name"><br>
+                <label for="age">Age: </label>
+                <input type="number" name="age" id="age" placeholder="Enter Your Age"><br>
+                <label for="number">Contact: </label>
+                <input type="number" name="contact" id="contact" placeholder="Enter Your Mobile number"><br>
+                <p>Address: <textarea name="address" id="Address" cols="30" rows="10" placeholder="Enter Your Address"></textarea></p>
+                <button class="btn" id="btn" onclick="clicked" >Submit</button>
+            </form>
+        </main>
+    </section>
+</body>
+</html>

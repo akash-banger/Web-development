@@ -1,0 +1,77 @@
+color:colorName;
+background color:colorName;
+border-color: colorName;
+background-image:url("image.jpg")
+background-position
+background-repeat
+background-size
+background-attachment
+font-family
+font-weight
+font-style
+font-size
+text-align
+text-decoration
+text-transform
+text-indent
+text-shadow
+letter-spacing
+word-spacing
+line-height
+
+
+
+#explore shorthand properties
+#you can use #ffffff as color to select any color you want.
+
+
+
+
+This is what happened when we open a website.
+Load HTML-->Parse HTML-->Create DOM Tree-->Display 
+                 |            |                    
+            Load CSS-->Parse css(thn attach style to dom node)
+
+
+
+
+
+
+Units in css 
+Relative(%,em,rem,vh,vw,vmin,vmax) and absolute(cm,mm,px,pt,pc)
+
+%: Relative to parent element
+em: Relative to the font-size of the elemtent(2em means 2 times the size of the current font )
+rem: Font size of the root elemnent.
+vw: Relative to 1% of the width of the viewport.
+vh: Relative to 1% of the height of the viewport.
+vmin: 1% of the viewport's smaller dimension.
+vmax: 1% of the viewport's larger dimension.
+
+
+
+
+CSS Box Model-->#refer style.css for syntaxes
+padding  #padding is included in the background color of your content.
+border
+
+
+#cascading, specificity and inheritance are important things.
+#you can use !important to make the specificity of that particular element maximum
+
+
+overflow property can be use to manage the overflow, whether it should be visible or not.
+
+
+#you can use the inspect tool or view page source to debug your css file.
+#you can use the clip-path property to change the shape of your image. refer the mega project.
+
+
+#z-index can be used to change that which element should be shown at the top and which at the bottom.
+
+
+flex-direction:     #starting of your elements left,center,right....
+justify-content:       #how you elements should behave space between space around.
+align-items:              #align you items along the main axis, all items. stretching can be done also
+align-self:                   #to uniquely align some element.
+

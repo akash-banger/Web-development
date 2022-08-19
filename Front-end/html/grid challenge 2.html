@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 2</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            height:50em;
+            column-gap: 10px;
+        }
+        .main,.nav{
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgb(170, 243, 230);
+        }
+        .box2{
+            row-gap: 10px;
+            display: grid;
+            grid-template-rows: 1fr 3fr 1fr;
+        }
+        .box1{
+            display: grid;
+        }
+        #yo{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            column-gap: 10px;
+        }
+        h2,h4{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <nav class="nav"><h4>nav</h4></nav>
+        </div>
+        <div class="box2">
+            <header class="main"><h2>header</h2></header>
+            <main id="yo">
+                <div class="main" id="article"><h4>article</h4></div>
+                <div class="main" id="ads"><h4>ads</h4></div>
+            </main>
+            <footer class="main"><h4>footer</h4>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

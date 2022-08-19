@@ -1,0 +1,19 @@
+{
+  "name": "usingpug",
+  "version": "1.0.0",
+  "description": "we are gonna use pug in this ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "att"
+  ],
+  "author": "Akash",
+  "license": "ISC",
+  "dependencies": {
+    "alert": "^5.1.1",
+    "express": "^4.18.1",
+    "pug": "^3.0.2"
+  }
+}

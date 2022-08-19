@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+    <style>
+        body {
+            background-color: rgb(21, 43, 60);
+            color: rgb(242, 214, 177);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>nice</h1>
+    <script>
+        time = new Date();
+        timeReference = new Date(0);
+        console.log(timeReference);
+        console.log(Date(10000))  // 10 seconds ahead form reference 
+        // let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds);
+        // let newDate = new Date("2029-09-30");
+        // let newDate = new Date(3032,4,6,9);
+        let newDate = new Date();
+        console.log(newDate);
+        let yr = newDate.getFullYear();
+        console.log("this year is " + yr);
+    </script>
+</body>
+
+</html>

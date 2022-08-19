@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        This is arrow function lecture
+    </div>
+    <script>
+        // function greet(){
+        //     console.log("yoooo");
+        // }
+
+        // arrow function
+        // let greet = () => {
+        //     console.log("Yooooo");
+        // }
+
+        setTimeout(()=>{
+            console.log("Yooo");
+        },3000); 
+
+        // let sum = (a,b)=>{
+        //     return a+b;
+        // }
+
+        let sum = (a,b)=> a+b;
+
+        let obj1 = {
+            greeting: "goood morning",
+            names: ["akash", "khiladi", "rohit sharma"],
+            speak(){
+                this.names.forEach((student)=>{     // for arrow function this is its parent this only but for general function this will be its own this 
+                    console.log(this.greeting +" "+ student + " bye" );
+                });
+            }
+        };
+        obj1.speak();
+
+    </script>
+</body>
+</html>
