@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space enthusiasts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        header {
+            padding: 6%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 200%;
+            color: orange;
+            animation: changeColor infinite 500ms;
+        }
+
+        @keyframes changeColor {
+            from{color: orange;}
+            to{color: orangered;}
+        }
+
+        h1,
+        h3 {
+            font-family: 'Josefin Sans', sans-serif;
+        }
+
+        h3 {
+            font-size: 150%;
+            color: white;
+        }
+
+        main {
+            margin-top: 10%;
+            color: orange;
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            width: 70%;
+        }
+
+        label {
+            font-size: 130%;
+        }
+
+        input {
+            border: solid 2px gray;
+            border-radius: 5px;
+            width: 100%;
+            margin: 1%;
+            padding: 0.8%;
+        }
+
+        section {
+            background-image: url("astronaut-outer-space-stars-planet-uhdpaper.com-4K-4.26-wp.thumbnail.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 1000px;
+        }
+
+        .submit {
+            background-color: bisque;
+            display: block;
+            width: 20%;
+            border: solid 2px gray;
+            border-radius: 5px;
+            padding: 0.7%;
+            cursor: pointer;
+            margin-top: 1.5% !important;
+            margin: 1.2%;
+        }
+
+        .submit:hover {
+            background-color: orange;
+        }
+
+        @media only screen and (max-width: 600px) {
+            header {
+                padding: 21%;
+            }   
+            main {
+                color: orangered;
+                margin-top: 17%;
+            }
+            label{
+                font-size: 120%;
+            }
+            h1{
+                font-size: 180%;
+            }
+            h2{
+                font-size: 140%;
+            }
+            input{
+                padding: 1.5%;
+                margin: 2%;
+            }
+            .submit{
+                margin-top: 2.5%;
+                margin: 2%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <h3>Hey there..!!</h3>
+            <h1>Are you a space enthusiast ?</h1>
+            <h3> Log in to our space portal </h3>
+        </header>
+        <main>
+            <form id="contact" method="get">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" placeholder="Enter Your Name" required><br>
+                <label for="Roll No">Roll Number: </label>
+                <input type="number" name="Roll No" id="roll" placeholder="Enter Your Roll Number" required><br>
+                <label for="number">Email: </label>
+                <input type="text" name="contact" id="email" placeholder="Enter Your Email Address" required><br>
+                <button class="submit" onclick="clicked()">Log in</button>
+            </form>
+        </main>
+    </section>
+
+    <script>
+        const name = document.getElementById("name");
+        const rollNo = document.getElementById("roll");
+        const email = document.getElementById("email");
+        function clicked() {
+            if (name.value != "" && rollNo.value != "" && email.value != "") {
+                alert("You have successfully logged in.");
+            }
+        }
+    </script>
+</body>
+
+</html>

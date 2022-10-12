@@ -16,6 +16,21 @@ app.set('views',path.join(__dirname,'views'));
 app.get('/', (req, res) => {
     res.status(200).render('index.pug')
 })
+app.get('/Home', (req, res) => {
+    res.status(200).render('index.pug')
+})
+app.get('/About', (req, res) => {
+    res.status(200).render('index.pug')
+})
+app.get('/Services', (req, res) => {
+    res.status(200).render('index.pug')
+})
+app.get('/ClassInfo', (req, res) => {
+    res.status(200).render('index.pug')
+})
+app.get('/ContactUs', (req, res) => {
+    res.status(200).render('index.pug')
+})
 app.listen(port,()=>{
     console.log(`The application is started successfully on port ${port}`);
 })
