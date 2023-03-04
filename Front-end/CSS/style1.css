@@ -1,0 +1,33 @@
+body{
+      width: 600px;
+      margin: auto;
+      text-align: center;
+      font-family: 'Lucida Sans';
+      color: #00376c;
+}
+header{
+      border: solid 0px;
+      border-bottom-width: 6px;
+      border-color: #7b7b7b;
+}
+header, footer{
+      background-color: #c7e3ff;
+}
+a{
+      color: #00376c;
+      text-decoration: none;
+}
+h3{
+      color: #1577ff;
+      border-bottom: 2px;
+      display:inline;
+}
+.services, footer{
+      font-style: italic;
+}
+
+h2{
+      border-bottom: 2px;
+      color: #7b7b7b;
+      text-align: center;
+}

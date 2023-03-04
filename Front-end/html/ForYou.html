@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body{
+            text-align: center;
+        }
+
+        img{
+            display: block;
+            margin: 20px auto;
+        }
+
+        button{
+            padding: 10px;
+            margin: 50px;
+        }
+
+        #yes{
+            background-color: aliceblue;
+        }
+
+        #no{
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <h1>Will You go for a date with me ..?</h1>
+
+    <img src="../sample img/cat-begging.gif" alt="">
+
+    <button id="yes">Yes</button>
+    <button id="no">No</button>
+
+    <script>
+        var yesButton = document.getElementById("yes");
+        var noButton = document.getElementById("no");
+        yesButton.onclick = function(){
+            alert("yeyyyyy!!!!, love you");
+        };
+        noButton.onmouseover = function(){
+            var left = Math.floor(Math.random() * (window.innerWidth));
+            var top = Math.floor(Math.random() * (window.innerHeight));
+            var leftString = left + "px";
+            var topString = top + "px";
+            while(left <= 200 || left>=1000 || top>=400 || top<=100){
+                var left = Math.floor(Math.random() * (window.innerWidth)) + "px";
+                var top = Math.floor(Math.random() * (window.innerHeight)) + "px";
+            }
+            console.log(left);
+            console.log(top);
+            noButton.style.position = "absolute";
+            noButton.style.left = leftString;
+            noButton.style.top = topString;
+        };
+    </script>
+</body>
+</html>
